@@ -74,3 +74,7 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+.button {
+  clip-path: polygon(0% 0%, 0% 100%, 100% 100%, 90% 100%, 100% 0%);
+}
