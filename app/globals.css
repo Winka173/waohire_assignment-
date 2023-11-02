@@ -8,6 +8,64 @@
   --background-end-rgb: 255, 255, 255;
 }
 
+* {
+  font-family: "Inter", sans-serif !important;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../public/font/Inter-Regular.ttf") format("truetype");
+
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../public/font/Inter-Bold.ttf") format("truetype");
+
+  font-weight: bold;
+  font-style: normal;
+  font-display: block;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../public/font/Inter-SemiBold.ttf") format("truetype");
+
+  font-weight: 600;
+  font-style: normal;
+  font-display: block;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../public/font/Inter-Medium.ttf") format("truetype");
+
+  font-weight: 500;
+  font-style: normal;
+  font-display: block;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../public/font/Inter-Light.ttf") format("truetype");
+
+  font-weight: 300;
+  font-style: normal;
+  font-display: block;
+}
+
+@font-face {
+  font-family: "BebasNeue";
+  src: url("../public/font/BebasNeue-Regular.ttf") format("truetype");
+
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
@@ -24,4 +82,13 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+  /* background: url("../public/images/main_bg.png"); */
+}
+
+.button.right {
+  clip-path: polygon(0% 0%, 0% 100%, 100% 100%, 90% 100%, 100% 0%);
+}
+
+.button.left {
+  clip-path: polygon(10% 0%, 0% 100%, 100% 100%, 100% 100%, 100% 0%);
 }
