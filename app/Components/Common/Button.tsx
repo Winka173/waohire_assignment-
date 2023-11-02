@@ -7,7 +7,7 @@ type ButtonProps = {
   fullWidth?: boolean;
   children?: React.ReactNode;
   onClick?: () => void;
-  variant?: "left" | "right";
+  variant?: "left" | "right" | "center";
   disabled?: boolean;
 };
 
@@ -40,6 +40,8 @@ const Button: React.FC<ButtonProps> = ({
         focus-visible:outline-offset-2
         text-white
         bg-gradient-to-r from-[#C1260F] to-[#EE642A]`,
+        variant === "right" && "right",
+        variant === "left" && "left",
         disabled && "opacity-50 cursor-default",
         fullWidth && "w-full"
       )}

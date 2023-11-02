@@ -82,16 +82,13 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+  /* background: url("../public/images/main_bg.png"); */
 }
 
-.button {
+.button.right {
   clip-path: polygon(0% 0%, 0% 100%, 100% 100%, 90% 100%, 100% 0%);
 }
 
-.title {
-  font-family: "BebasNeue" !important;
-  font-size: 104px;
-  font-weight: normal;
-  line-height: 95.5%;
-  letter-spacing: -4px;
+.button.left {
+  clip-path: polygon(10% 0%, 0% 100%, 100% 100%, 100% 100%, 100% 0%);
 }
