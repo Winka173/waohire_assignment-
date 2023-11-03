@@ -66,6 +66,24 @@
   font-display: block;
 }
 
+@font-face {
+  font-family: "Nunito";
+  src: url("../public/font/Nunito-Regular.ttf") format("truetype");
+
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+@font-face {
+  font-family: "Nunito";
+  src: url("../public/font/Nunito-ExtraLight.ttf") format("truetype");
+
+  font-weight: 200;
+  font-style: normal;
+  font-display: block;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
@@ -91,4 +109,50 @@ body {
 
 .button.left {
   clip-path: polygon(10% 0%, 0% 100%, 100% 100%, 100% 100%, 100% 0%);
+}
+
+.button.center {
+  clip-path: polygon(0% 0%, 13% 100%, 100% 100%, 87% 100%, 100% 0%);
+}
+
+.award {
+  display: grid;
+  gap: 25px;
+  grid-auto-columns: minmax(0, 1fr);
+  grid-template-areas:
+    "navigation navigation navigation image2 image2 image2"
+    "image1 image1 image1 image2 image2 image2"
+    "image1 image1 image1 image4 image4 image4"
+    "image3 image3 image3 image4 image4 image4"
+    "image3 image3 image3 more more more";
+}
+
+.award ul {
+  grid-area: navigation;
+}
+
+.award .award1 {
+  grid-area: image1;
+}
+
+.award .award2 {
+  grid-area: image2;
+}
+
+.award .award3 {
+  grid-area: image3;
+}
+
+.award .award4 {
+  grid-area: image4;
+}
+
+.award .more {
+  grid-area: more;
+}
+
+.text-primary {
+  background: -webkit-linear-gradient(#c1260f, #ee642a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }

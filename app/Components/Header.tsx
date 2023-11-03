@@ -3,7 +3,7 @@ import Button from "./Common/Button";
 
 const Header = () => {
   return (
-    <div className="flex items-center justify-between pl-[100px] pr-[100px]">
+    <header className="flex items-center justify-between pl-[100px] pr-[100px]">
       <ul className="flex">
         <li className="pr-[37px]">
           <a
@@ -35,7 +35,7 @@ const Header = () => {
         </li>
       </ul>
       <Button variant="right">Register</Button>
-    </div>
+    </header>
   );
 };
 
