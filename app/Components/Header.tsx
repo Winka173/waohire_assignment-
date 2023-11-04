@@ -14,7 +14,7 @@ const Header = () => {
     setShow((pre) => !pre);
   };
 
-  const menuRef = useRef();
+  const menuRef = useRef<any>(null);
 
   useClickOutside(menuRef, () => {
     setShow(false);
