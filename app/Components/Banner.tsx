@@ -28,7 +28,7 @@ const Banner = () => {
             alt="main banner"
           />
           <img
-            className="absolute md:scale-1 md:top-0 md:right-[69px] max-sm:hidden"
+            className="absolute md:scale-1 md:top-0 md:right-[69px] hidden md:block"
             src="images/banner/banner_soldier.png"
             alt="soldier"
           />

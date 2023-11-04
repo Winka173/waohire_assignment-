@@ -49,6 +49,8 @@ const Button: React.FC<ButtonProps> = ({
         focus-visible:outline-2
         focus-visible:outline-offset-2
         text-white
+        hover:opacity-70
+        duration-300
         bg-gradient-to-r from-[#C1260F] to-[#EE642A]`,
         variant === "right" && "right",
         variant === "left" && "left ",

@@ -5,14 +5,15 @@ import Feature from "./Components/Feature";
 import Reward from "./Components/Reward";
 import Award from "./Components/Award";
 import Review from "./Components/Review";
+import Footer from "./Components/Footer";
 
 export default function Home() {
   return (
     <>
-      <div className="pt-[60px]">
+      <div className="pt-0">
         <Header />
       </div>
-      <div className="pt-[77px]">
+      <div className="pt-[77px] mt-[60px] md:mt-0">
         <Banner />
       </div>
       <div className="pt-[20px]">
@@ -31,8 +32,11 @@ export default function Home() {
         <Award />
         {/* done responsive */}
       </div>
-      <div className="pt-[60px]">
+      <div className="pt-[40px] md:pt-[100px]">
         <Review />
+      </div>
+      <div className="pt-7 md:pt-[60px]">
+        <Footer />
       </div>
     </>
   );

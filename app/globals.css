@@ -94,13 +94,16 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-  /* background: url("../public/images/main_bg.png"); */
+  background-color: black;
+  background: url("../public/images/main_bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: fill;
+}
+
+html {
+  background-color: black;
+  opacity: 0.99;
 }
 
 .button.right {
@@ -113,6 +116,10 @@ body {
 
 .button.center {
   clip-path: polygon(0% 0%, 13% 100%, 100% 100%, 87% 100%, 100% 0%);
+}
+
+.box-shadow {
+  box-shadow: 0 5px 5px 0 rgba(238, 100, 42, 0.05);
 }
 
 .award {

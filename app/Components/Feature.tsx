@@ -4,7 +4,7 @@ import Button from "./Common/Button";
 const Feature = () => {
   return (
     <div className="pl-[20px] pr-[20px] md:pl-[100px] md:pr-[100px]">
-      <div className="md:pl-[70px] md:pr-[70px] max-sm:flex-col flex gap-0 md:gap-6">
+      <div className="md:pl-[70px] md:pr-[70px] max-sm:flex-col flex gap-3 md:gap-6">
         <div className="flex flex-col justify-center items-center">
           <img
             className=""
